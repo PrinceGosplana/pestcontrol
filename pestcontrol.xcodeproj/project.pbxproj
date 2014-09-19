@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C331C12C198A7CD100B61D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C12B198A7CD100B61D36 /* Foundation.framework */; };
+		C331C12E198A7CD100B61D36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C12D198A7CD100B61D36 /* CoreGraphics.framework */; };
+		C331C130198A7CD100B61D36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C12F198A7CD100B61D36 /* UIKit.framework */; };
+		C331C132198A7CD100B61D36 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C131198A7CD100B61D36 /* SpriteKit.framework */; };
+		C331C138198A7CD100B61D36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C331C136198A7CD100B61D36 /* InfoPlist.strings */; };
+		C331C13A198A7CD100B61D36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C139198A7CD100B61D36 /* main.m */; };
+		C331C13E198A7CD100B61D36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C13D198A7CD100B61D36 /* AppDelegate.m */; };
+		C331C141198A7CD100B61D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C331C13F198A7CD100B61D36 /* Main.storyboard */; };
+		C331C144198A7CD100B61D36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C143198A7CD100B61D36 /* ViewController.m */; };
+		C331C147198A7CD100B61D36 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C146198A7CD100B61D36 /* MyScene.m */; };
+		C331C14B198A7CD100B61D36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C331C14A198A7CD100B61D36 /* Images.xcassets */; };
+		C331C152198A7CD100B61D36 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C151198A7CD100B61D36 /* XCTest.framework */; };
+		C331C153198A7CD100B61D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C12B198A7CD100B61D36 /* Foundation.framework */; };
+		C331C154198A7CD100B61D36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C12F198A7CD100B61D36 /* UIKit.framework */; };
+		C331C15C198A7CD100B61D36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C331C15A198A7CD100B61D36 /* InfoPlist.strings */; };
+		C331C15E198A7CD100B61D36 /* pestcontrolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C15D198A7CD100B61D36 /* pestcontrolTests.m */; };
+		C331C1A3198A7DAC00B61D36 /* characters.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C331C16A198A7DAC00B61D36 /* characters.atlas */; };
+		C331C1A4198A7DAC00B61D36 /* scenery.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C331C16B198A7DAC00B61D36 /* scenery.atlas */; };
+		C331C1A5198A7DAC00B61D36 /* BugSplatter.sks in Resources */ = {isa = PBXBuildFile; fileRef = C331C16D198A7DAC00B61D36 /* BugSplatter.sks */; };
+		C331C1A6198A7DAC00B61D36 /* FirebugSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = C331C16E198A7DAC00B61D36 /* FirebugSmoke.sks */; };
+		C331C1A7198A7DAC00B61D36 /* FirebugSparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = C331C16F198A7DAC00B61D36 /* FirebugSparks.sks */; };
+		C331C1A8198A7DAC00B61D36 /* Leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = C331C170198A7DAC00B61D36 /* Leaf.png */; };
+		C331C1A9198A7DAC00B61D36 /* PlayerHitWall.sks in Resources */ = {isa = PBXBuildFile; fileRef = C331C171198A7DAC00B61D36 /* PlayerHitWall.sks */; };
+		C331C1AA198A7DAC00B61D36 /* PlayerTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = C331C172198A7DAC00B61D36 /* PlayerTrail.sks */; };
+		C331C1AB198A7DAC00B61D36 /* Rock.png in Resources */ = {isa = PBXBuildFile; fileRef = C331C173198A7DAC00B61D36 /* Rock.png */; };
+		C331C1AC198A7DAC00B61D36 /* Spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C331C174198A7DAC00B61D36 /* Spark.png */; };
+		C331C1AD198A7DAC00B61D36 /* Splat.png in Resources */ = {isa = PBXBuildFile; fileRef = C331C175198A7DAC00B61D36 /* Splat.png */; };
+		C331C1AE198A7DAC00B61D36 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = C331C176198A7DAC00B61D36 /* Star.png */; };
+		C331C1AF198A7DAC00B61D36 /* TreeSmash.sks in Resources */ = {isa = PBXBuildFile; fileRef = C331C177198A7DAC00B61D36 /* TreeSmash.sks */; };
+		C331C1B0198A7DAC00B61D36 /* WaterDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = C331C178198A7DAC00B61D36 /* WaterDrop.png */; };
+		C331C1B1198A7DAC00B61D36 /* DrownFireBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C17A198A7DAC00B61D36 /* DrownFireBug.mp3 */; };
+		C331C1B2198A7DAC00B61D36 /* HitFireBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C17B198A7DAC00B61D36 /* HitFireBug.mp3 */; };
+		C331C1B3198A7DAC00B61D36 /* HitTree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C17C198A7DAC00B61D36 /* HitTree.mp3 */; };
+		C331C1B4198A7DAC00B61D36 /* HitWall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C17D198A7DAC00B61D36 /* HitWall.mp3 */; };
+		C331C1B5198A7DAC00B61D36 /* HitWater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C17E198A7DAC00B61D36 /* HitWater.mp3 */; };
+		C331C1B6198A7DAC00B61D36 /* KillBug-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C17F198A7DAC00B61D36 /* KillBug-1.mp3 */; };
+		C331C1B7198A7DAC00B61D36 /* KillBug-10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C180198A7DAC00B61D36 /* KillBug-10.mp3 */; };
+		C331C1B8198A7DAC00B61D36 /* KillBug-11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C181198A7DAC00B61D36 /* KillBug-11.mp3 */; };
+		C331C1B9198A7DAC00B61D36 /* KillBug-12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C182198A7DAC00B61D36 /* KillBug-12.mp3 */; };
+		C331C1BA198A7DAC00B61D36 /* KillBug-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C183198A7DAC00B61D36 /* KillBug-2.mp3 */; };
+		C331C1BB198A7DAC00B61D36 /* KillBug-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C184198A7DAC00B61D36 /* KillBug-3.mp3 */; };
+		C331C1BC198A7DAC00B61D36 /* KillBug-4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C185198A7DAC00B61D36 /* KillBug-4.mp3 */; };
+		C331C1BD198A7DAC00B61D36 /* KillBug-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C186198A7DAC00B61D36 /* KillBug-5.mp3 */; };
+		C331C1BE198A7DAC00B61D36 /* KillBug-6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C187198A7DAC00B61D36 /* KillBug-6.mp3 */; };
+		C331C1BF198A7DAC00B61D36 /* KillBug-7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C188198A7DAC00B61D36 /* KillBug-7.mp3 */; };
+		C331C1C0198A7DAC00B61D36 /* KillBug-8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C189198A7DAC00B61D36 /* KillBug-8.mp3 */; };
+		C331C1C1198A7DAC00B61D36 /* KillBug-9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C18A198A7DAC00B61D36 /* KillBug-9.mp3 */; };
+		C331C1C2198A7DAC00B61D36 /* Lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C18B198A7DAC00B61D36 /* Lose.mp3 */; };
+		C331C1C3198A7DAC00B61D36 /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C18C198A7DAC00B61D36 /* Music.mp3 */; };
+		C331C1C4198A7DAC00B61D36 /* PlayerMove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C18D198A7DAC00B61D36 /* PlayerMove.mp3 */; };
+		C331C1C5198A7DAC00B61D36 /* TickTock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C18E198A7DAC00B61D36 /* TickTock.mp3 */; };
+		C331C1C6198A7DAC00B61D36 /* Win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331C18F198A7DAC00B61D36 /* Win.mp3 */; };
+		C331C1C7198A7DAC00B61D36 /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C192198A7DAC00B61D36 /* SKTEffects.m */; };
+		C331C1C8198A7DAC00B61D36 /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C194198A7DAC00B61D36 /* SKTTimingFunctions.m */; };
+		C331C1C9198A7DAC00B61D36 /* juicy-level-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C196198A7DAC00B61D36 /* juicy-level-bg.txt */; };
+		C331C1CA198A7DAC00B61D36 /* juicy-level-breakables.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C197198A7DAC00B61D36 /* juicy-level-breakables.txt */; };
+		C331C1CB198A7DAC00B61D36 /* juicy-level-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C198198A7DAC00B61D36 /* juicy-level-bugs.txt */; };
+		C331C1CC198A7DAC00B61D36 /* JuicyLevels.plist in Resources */ = {isa = PBXBuildFile; fileRef = C331C199198A7DAC00B61D36 /* JuicyLevels.plist */; };
+		C331C1CD198A7DAC00B61D36 /* level-1-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C19A198A7DAC00B61D36 /* level-1-bg.txt */; };
+		C331C1CE198A7DAC00B61D36 /* level-1-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C19B198A7DAC00B61D36 /* level-1-bugs.txt */; };
+		C331C1CF198A7DAC00B61D36 /* level-2-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C19C198A7DAC00B61D36 /* level-2-bg.txt */; };
+		C331C1D0198A7DAC00B61D36 /* level-2-breakables.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C19D198A7DAC00B61D36 /* level-2-breakables.txt */; };
+		C331C1D1198A7DAC00B61D36 /* level-2-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C19E198A7DAC00B61D36 /* level-2-bugs.txt */; };
+		C331C1D2198A7DAC00B61D36 /* level-3-sample.tmx in Resources */ = {isa = PBXBuildFile; fileRef = C331C19F198A7DAC00B61D36 /* level-3-sample.tmx */; };
+		C331C1D3198A7DAC00B61D36 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = C331C1A0198A7DAC00B61D36 /* Levels.plist */; };
+		C331C1D4198A7DAC00B61D36 /* TileMapLayerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1A2198A7DAC00B61D36 /* TileMapLayerLoader.m */; };
+		C331C1D7198A7E1C00B61D36 /* TileMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1D6198A7E1C00B61D36 /* TileMapLayer.m */; };
+		C331C1D9198A7E8400B61D36 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C331C1D8198A7E8400B61D36 /* libz.dylib */; };
+		C331C1E5198A7E9900B61D36 /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1DC198A7E9900B61D36 /* SKAction+SKTExtras.m */; };
+		C331C1E6198A7E9900B61D36 /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1DE198A7E9900B61D36 /* SKEmitterNode+SKTExtras.m */; };
+		C331C1E7198A7E9900B61D36 /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1E0198A7E9900B61D36 /* SKNode+SKTExtras.m */; };
+		C331C1E8198A7E9900B61D36 /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1E2198A7E9900B61D36 /* SKTAudio.m */; };
+		C331C1E9198A7E9900B61D36 /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = C331C1E4198A7E9900B61D36 /* SKTUtils.mm */; };
+		C331C1F6198A894000B61D36 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1ED198A894000B61D36 /* Player.m */; };
+		C331C1F7198A894000B61D36 /* Bug.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1EF198A894000B61D36 /* Bug.m */; };
+		C331C1F8198A894000B61D36 /* FireBug.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1F1198A894000B61D36 /* FireBug.m */; };
+		C331C1F9198A894000B61D36 /* Breakable.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1F3198A894000B61D36 /* Breakable.m */; };
+		C331C1FA198A894000B61D36 /* AnimatingSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1F5198A894000B61D36 /* AnimatingSprite.m */; };
+		C331C1FD198A89A100B61D36 /* TmxTileMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C1FC198A89A100B61D36 /* TmxTileMapLayer.m */; };
+		C331C204198A89E200B61D36 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C200198A89E200B61D36 /* JSTileMap.m */; };
+		C331C205198A89E200B61D36 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C331C202198A89E200B61D36 /* LFCGzipUtility.m */; };
+		C331C206198A89E200B61D36 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331C203198A89E200B61D36 /* LICENSE.txt */; };
+		C342BB7E198F8DAA000D6D9C /* myLevel-3-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB7B198F8DAA000D6D9C /* myLevel-3-bg.txt */; };
+		C342BB7F198F8DAA000D6D9C /* myLevel-3-breakables.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB7C198F8DAA000D6D9C /* myLevel-3-breakables.txt */; };
+		C342BB80198F8DAA000D6D9C /* myLevel-3-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB7D198F8DAA000D6D9C /* myLevel-3-bugs.txt */; };
+		C342BB82198F91DE000D6D9C /* myLevel-1-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB81198F91DE000D6D9C /* myLevel-1-bg.txt */; };
+		C342BB84198F9DA0000D6D9C /* myLevels.plist in Resources */ = {isa = PBXBuildFile; fileRef = C342BB83198F9DA0000D6D9C /* myLevels.plist */; };
+		C342BB88198FA494000D6D9C /* myLevel-1-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB87198FA494000D6D9C /* myLevel-1-bugs.txt */; };
+		C342BB8C198FA69D000D6D9C /* myLevel-2-bg.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB8B198FA69D000D6D9C /* myLevel-2-bg.txt */; };
+		C342BB8E198FA799000D6D9C /* myLevel-2-bugs.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB8D198FA799000D6D9C /* myLevel-2-bugs.txt */; };
+		C342BB90198FA85F000D6D9C /* myLevel-2-breakables.txt in Resources */ = {isa = PBXBuildFile; fileRef = C342BB8F198FA85F000D6D9C /* myLevel-2-breakables.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C331C155198A7CD100B61D36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C331C120198A7CD100B61D36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C331C127198A7CD100B61D36;
+			remoteInfo = pestcontrol;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C331C128198A7CD100B61D36 /* pestcontrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pestcontrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C331C12B198A7CD100B61D36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C331C12D198A7CD100B61D36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C331C12F198A7CD100B61D36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C331C131198A7CD100B61D36 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		C331C135198A7CD100B61D36 /* pestcontrol-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pestcontrol-Info.plist"; sourceTree = "<group>"; };
+		C331C137198A7CD100B61D36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C331C139198A7CD100B61D36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C331C13B198A7CD100B61D36 /* pestcontrol-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pestcontrol-Prefix.pch"; sourceTree = "<group>"; };
+		C331C13C198A7CD100B61D36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C331C13D198A7CD100B61D36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C331C140198A7CD100B61D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C331C142198A7CD100B61D36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C331C143198A7CD100B61D36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C331C145198A7CD100B61D36 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		C331C146198A7CD100B61D36 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		C331C14A198A7CD100B61D36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C331C150198A7CD100B61D36 /* pestcontrolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pestcontrolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C331C151198A7CD100B61D36 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C331C159198A7CD100B61D36 /* pestcontrolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pestcontrolTests-Info.plist"; sourceTree = "<group>"; };
+		C331C15B198A7CD100B61D36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C331C15D198A7CD100B61D36 /* pestcontrolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pestcontrolTests.m; sourceTree = "<group>"; };
+		C331C16A198A7DAC00B61D36 /* characters.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = characters.atlas; sourceTree = "<group>"; };
+		C331C16B198A7DAC00B61D36 /* scenery.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = scenery.atlas; sourceTree = "<group>"; };
+		C331C16D198A7DAC00B61D36 /* BugSplatter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BugSplatter.sks; sourceTree = "<group>"; };
+		C331C16E198A7DAC00B61D36 /* FirebugSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirebugSmoke.sks; sourceTree = "<group>"; };
+		C331C16F198A7DAC00B61D36 /* FirebugSparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirebugSparks.sks; sourceTree = "<group>"; };
+		C331C170198A7DAC00B61D36 /* Leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaf.png; sourceTree = "<group>"; };
+		C331C171198A7DAC00B61D36 /* PlayerHitWall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerHitWall.sks; sourceTree = "<group>"; };
+		C331C172198A7DAC00B61D36 /* PlayerTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerTrail.sks; sourceTree = "<group>"; };
+		C331C173198A7DAC00B61D36 /* Rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rock.png; sourceTree = "<group>"; };
+		C331C174198A7DAC00B61D36 /* Spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spark.png; sourceTree = "<group>"; };
+		C331C175198A7DAC00B61D36 /* Splat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splat.png; sourceTree = "<group>"; };
+		C331C176198A7DAC00B61D36 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		C331C177198A7DAC00B61D36 /* TreeSmash.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TreeSmash.sks; sourceTree = "<group>"; };
+		C331C178198A7DAC00B61D36 /* WaterDrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WaterDrop.png; sourceTree = "<group>"; };
+		C331C17A198A7DAC00B61D36 /* DrownFireBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DrownFireBug.mp3; sourceTree = "<group>"; };
+		C331C17B198A7DAC00B61D36 /* HitFireBug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitFireBug.mp3; sourceTree = "<group>"; };
+		C331C17C198A7DAC00B61D36 /* HitTree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitTree.mp3; sourceTree = "<group>"; };
+		C331C17D198A7DAC00B61D36 /* HitWall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitWall.mp3; sourceTree = "<group>"; };
+		C331C17E198A7DAC00B61D36 /* HitWater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitWater.mp3; sourceTree = "<group>"; };
+		C331C17F198A7DAC00B61D36 /* KillBug-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-1.mp3"; sourceTree = "<group>"; };
+		C331C180198A7DAC00B61D36 /* KillBug-10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-10.mp3"; sourceTree = "<group>"; };
+		C331C181198A7DAC00B61D36 /* KillBug-11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-11.mp3"; sourceTree = "<group>"; };
+		C331C182198A7DAC00B61D36 /* KillBug-12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-12.mp3"; sourceTree = "<group>"; };
+		C331C183198A7DAC00B61D36 /* KillBug-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-2.mp3"; sourceTree = "<group>"; };
+		C331C184198A7DAC00B61D36 /* KillBug-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-3.mp3"; sourceTree = "<group>"; };
+		C331C185198A7DAC00B61D36 /* KillBug-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-4.mp3"; sourceTree = "<group>"; };
+		C331C186198A7DAC00B61D36 /* KillBug-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-5.mp3"; sourceTree = "<group>"; };
+		C331C187198A7DAC00B61D36 /* KillBug-6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-6.mp3"; sourceTree = "<group>"; };
+		C331C188198A7DAC00B61D36 /* KillBug-7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-7.mp3"; sourceTree = "<group>"; };
+		C331C189198A7DAC00B61D36 /* KillBug-8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-8.mp3"; sourceTree = "<group>"; };
+		C331C18A198A7DAC00B61D36 /* KillBug-9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillBug-9.mp3"; sourceTree = "<group>"; };
+		C331C18B198A7DAC00B61D36 /* Lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lose.mp3; sourceTree = "<group>"; };
+		C331C18C198A7DAC00B61D36 /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music.mp3; sourceTree = "<group>"; };
+		C331C18D198A7DAC00B61D36 /* PlayerMove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PlayerMove.mp3; sourceTree = "<group>"; };
+		C331C18E198A7DAC00B61D36 /* TickTock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TickTock.mp3; sourceTree = "<group>"; };
+		C331C18F198A7DAC00B61D36 /* Win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Win.mp3; sourceTree = "<group>"; };
+		C331C191198A7DAC00B61D36 /* SKTEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEffects.h; sourceTree = "<group>"; };
+		C331C192198A7DAC00B61D36 /* SKTEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEffects.m; sourceTree = "<group>"; };
+		C331C193198A7DAC00B61D36 /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
+		C331C194198A7DAC00B61D36 /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
+		C331C196198A7DAC00B61D36 /* juicy-level-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "juicy-level-bg.txt"; sourceTree = "<group>"; };
+		C331C197198A7DAC00B61D36 /* juicy-level-breakables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "juicy-level-breakables.txt"; sourceTree = "<group>"; };
+		C331C198198A7DAC00B61D36 /* juicy-level-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "juicy-level-bugs.txt"; sourceTree = "<group>"; };
+		C331C199198A7DAC00B61D36 /* JuicyLevels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JuicyLevels.plist; sourceTree = "<group>"; };
+		C331C19A198A7DAC00B61D36 /* level-1-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-1-bg.txt"; sourceTree = "<group>"; };
+		C331C19B198A7DAC00B61D36 /* level-1-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-1-bugs.txt"; sourceTree = "<group>"; };
+		C331C19C198A7DAC00B61D36 /* level-2-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-2-bg.txt"; sourceTree = "<group>"; };
+		C331C19D198A7DAC00B61D36 /* level-2-breakables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-2-breakables.txt"; sourceTree = "<group>"; };
+		C331C19E198A7DAC00B61D36 /* level-2-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "level-2-bugs.txt"; sourceTree = "<group>"; };
+		C331C19F198A7DAC00B61D36 /* level-3-sample.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "level-3-sample.tmx"; sourceTree = "<group>"; };
+		C331C1A0198A7DAC00B61D36 /* Levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+		C331C1A1198A7DAC00B61D36 /* TileMapLayerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapLayerLoader.h; sourceTree = "<group>"; };
+		C331C1A2198A7DAC00B61D36 /* TileMapLayerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMapLayerLoader.m; sourceTree = "<group>"; };
+		C331C1D5198A7E1C00B61D36 /* TileMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapLayer.h; sourceTree = "<group>"; };
+		C331C1D6198A7E1C00B61D36 /* TileMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMapLayer.m; sourceTree = "<group>"; };
+		C331C1D8198A7E8400B61D36 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C331C1DB198A7E9900B61D36 /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		C331C1DC198A7E9900B61D36 /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		C331C1DD198A7E9900B61D36 /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		C331C1DE198A7E9900B61D36 /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		C331C1DF198A7E9900B61D36 /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		C331C1E0198A7E9900B61D36 /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		C331C1E1198A7E9900B61D36 /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		C331C1E2198A7E9900B61D36 /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		C331C1E3198A7E9900B61D36 /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		C331C1E4198A7E9900B61D36 /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+		C331C1EA198A890900B61D36 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		C331C1EC198A894000B61D36 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C331C1ED198A894000B61D36 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		C331C1EE198A894000B61D36 /* Bug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bug.h; sourceTree = "<group>"; };
+		C331C1EF198A894000B61D36 /* Bug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bug.m; sourceTree = "<group>"; };
+		C331C1F0198A894000B61D36 /* FireBug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireBug.h; sourceTree = "<group>"; };
+		C331C1F1198A894000B61D36 /* FireBug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireBug.m; sourceTree = "<group>"; };
+		C331C1F2198A894000B61D36 /* Breakable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Breakable.h; sourceTree = "<group>"; };
+		C331C1F3198A894000B61D36 /* Breakable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Breakable.m; sourceTree = "<group>"; };
+		C331C1F4198A894000B61D36 /* AnimatingSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatingSprite.h; sourceTree = "<group>"; };
+		C331C1F5198A894000B61D36 /* AnimatingSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatingSprite.m; sourceTree = "<group>"; };
+		C331C1FB198A89A100B61D36 /* TmxTileMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxTileMapLayer.h; sourceTree = "<group>"; };
+		C331C1FC198A89A100B61D36 /* TmxTileMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TmxTileMapLayer.m; sourceTree = "<group>"; };
+		C331C1FF198A89E200B61D36 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		C331C200198A89E200B61D36 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		C331C201198A89E200B61D36 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		C331C202198A89E200B61D36 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		C331C203198A89E200B61D36 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C342BB7B198F8DAA000D6D9C /* myLevel-3-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-3-bg.txt"; sourceTree = "<group>"; };
+		C342BB7C198F8DAA000D6D9C /* myLevel-3-breakables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-3-breakables.txt"; sourceTree = "<group>"; };
+		C342BB7D198F8DAA000D6D9C /* myLevel-3-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-3-bugs.txt"; sourceTree = "<group>"; };
+		C342BB81198F91DE000D6D9C /* myLevel-1-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-1-bg.txt"; sourceTree = "<group>"; };
+		C342BB83198F9DA0000D6D9C /* myLevels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = myLevels.plist; sourceTree = "<group>"; };
+		C342BB87198FA494000D6D9C /* myLevel-1-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-1-bugs.txt"; sourceTree = "<group>"; };
+		C342BB8B198FA69D000D6D9C /* myLevel-2-bg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-2-bg.txt"; sourceTree = "<group>"; };
+		C342BB8D198FA799000D6D9C /* myLevel-2-bugs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-2-bugs.txt"; sourceTree = "<group>"; };
+		C342BB8F198FA85F000D6D9C /* myLevel-2-breakables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "myLevel-2-breakables.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C331C125198A7CD100B61D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C331C1D9198A7E8400B61D36 /* libz.dylib in Frameworks */,
+				C331C12E198A7CD100B61D36 /* CoreGraphics.framework in Frameworks */,
+				C331C130198A7CD100B61D36 /* UIKit.framework in Frameworks */,
+				C331C132198A7CD100B61D36 /* SpriteKit.framework in Frameworks */,
+				C331C12C198A7CD100B61D36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C331C14D198A7CD100B61D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C331C152198A7CD100B61D36 /* XCTest.framework in Frameworks */,
+				C331C154198A7CD100B61D36 /* UIKit.framework in Frameworks */,
+				C331C153198A7CD100B61D36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C331C11F198A7CD100B61D36 = {
+			isa = PBXGroup;
+			children = (
+				C331C133198A7CD100B61D36 /* pestcontrol */,
+				C331C157198A7CD100B61D36 /* pestcontrolTests */,
+				C331C12A198A7CD100B61D36 /* Frameworks */,
+				C331C129198A7CD100B61D36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C331C129198A7CD100B61D36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C331C128198A7CD100B61D36 /* pestcontrol.app */,
+				C331C150198A7CD100B61D36 /* pestcontrolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C331C12A198A7CD100B61D36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C331C1D8198A7E8400B61D36 /* libz.dylib */,
+				C331C12B198A7CD100B61D36 /* Foundation.framework */,
+				C331C12D198A7CD100B61D36 /* CoreGraphics.framework */,
+				C331C12F198A7CD100B61D36 /* UIKit.framework */,
+				C331C131198A7CD100B61D36 /* SpriteKit.framework */,
+				C331C151198A7CD100B61D36 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C331C133198A7CD100B61D36 /* pestcontrol */ = {
+			isa = PBXGroup;
+			children = (
+				C331C1EB198A892000B61D36 /* Objects */,
+				C331C1DA198A7E9900B61D36 /* SKTUtils */,
+				C331C167198A7DAC00B61D36 /* Resources */,
+				C331C13C198A7CD100B61D36 /* AppDelegate.h */,
+				C331C13D198A7CD100B61D36 /* AppDelegate.m */,
+				C331C13F198A7CD100B61D36 /* Main.storyboard */,
+				C331C142198A7CD100B61D36 /* ViewController.h */,
+				C331C143198A7CD100B61D36 /* ViewController.m */,
+				C331C145198A7CD100B61D36 /* MyScene.h */,
+				C331C146198A7CD100B61D36 /* MyScene.m */,
+				C331C14A198A7CD100B61D36 /* Images.xcassets */,
+				C331C1D5198A7E1C00B61D36 /* TileMapLayer.h */,
+				C331C1D6198A7E1C00B61D36 /* TileMapLayer.m */,
+				C331C1FB198A89A100B61D36 /* TmxTileMapLayer.h */,
+				C331C1FC198A89A100B61D36 /* TmxTileMapLayer.m */,
+				C331C1EA198A890900B61D36 /* Physics.h */,
+				C331C134198A7CD100B61D36 /* Supporting Files */,
+			);
+			path = pestcontrol;
+			sourceTree = "<group>";
+		};
+		C331C134198A7CD100B61D36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C331C1FE198A89D500B61D36 /* JSTileMap */,
+				C331C135198A7CD100B61D36 /* pestcontrol-Info.plist */,
+				C331C136198A7CD100B61D36 /* InfoPlist.strings */,
+				C331C139198A7CD100B61D36 /* main.m */,
+				C331C13B198A7CD100B61D36 /* pestcontrol-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C331C157198A7CD100B61D36 /* pestcontrolTests */ = {
+			isa = PBXGroup;
+			children = (
+				C331C15D198A7CD100B61D36 /* pestcontrolTests.m */,
+				C331C158198A7CD100B61D36 /* Supporting Files */,
+			);
+			path = pestcontrolTests;
+			sourceTree = "<group>";
+		};
+		C331C158198A7CD100B61D36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C331C159198A7CD100B61D36 /* pestcontrolTests-Info.plist */,
+				C331C15A198A7CD100B61D36 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C331C167198A7DAC00B61D36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C342BB7A198F8DAA000D6D9C /* myLevels */,
+				C331C168198A7DAC00B61D36 /* Art */,
+				C331C190198A7DAC00B61D36 /* Extra Source Code */,
+				C331C195198A7DAC00B61D36 /* Levels */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C331C168198A7DAC00B61D36 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				C331C169198A7DAC00B61D36 /* Images */,
+				C331C16C198A7DAC00B61D36 /* Particles */,
+				C331C179198A7DAC00B61D36 /* Sounds */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		C331C169198A7DAC00B61D36 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C331C16A198A7DAC00B61D36 /* characters.atlas */,
+				C331C16B198A7DAC00B61D36 /* scenery.atlas */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C331C16C198A7DAC00B61D36 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C331C16D198A7DAC00B61D36 /* BugSplatter.sks */,
+				C331C16E198A7DAC00B61D36 /* FirebugSmoke.sks */,
+				C331C16F198A7DAC00B61D36 /* FirebugSparks.sks */,
+				C331C170198A7DAC00B61D36 /* Leaf.png */,
+				C331C171198A7DAC00B61D36 /* PlayerHitWall.sks */,
+				C331C172198A7DAC00B61D36 /* PlayerTrail.sks */,
+				C331C173198A7DAC00B61D36 /* Rock.png */,
+				C331C174198A7DAC00B61D36 /* Spark.png */,
+				C331C175198A7DAC00B61D36 /* Splat.png */,
+				C331C176198A7DAC00B61D36 /* Star.png */,
+				C331C177198A7DAC00B61D36 /* TreeSmash.sks */,
+				C331C178198A7DAC00B61D36 /* WaterDrop.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		C331C179198A7DAC00B61D36 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C331C17A198A7DAC00B61D36 /* DrownFireBug.mp3 */,
+				C331C17B198A7DAC00B61D36 /* HitFireBug.mp3 */,
+				C331C17C198A7DAC00B61D36 /* HitTree.mp3 */,
+				C331C17D198A7DAC00B61D36 /* HitWall.mp3 */,
+				C331C17E198A7DAC00B61D36 /* HitWater.mp3 */,
+				C331C17F198A7DAC00B61D36 /* KillBug-1.mp3 */,
+				C331C180198A7DAC00B61D36 /* KillBug-10.mp3 */,
+				C331C181198A7DAC00B61D36 /* KillBug-11.mp3 */,
+				C331C182198A7DAC00B61D36 /* KillBug-12.mp3 */,
+				C331C183198A7DAC00B61D36 /* KillBug-2.mp3 */,
+				C331C184198A7DAC00B61D36 /* KillBug-3.mp3 */,
+				C331C185198A7DAC00B61D36 /* KillBug-4.mp3 */,
+				C331C186198A7DAC00B61D36 /* KillBug-5.mp3 */,
+				C331C187198A7DAC00B61D36 /* KillBug-6.mp3 */,
+				C331C188198A7DAC00B61D36 /* KillBug-7.mp3 */,
+				C331C189198A7DAC00B61D36 /* KillBug-8.mp3 */,
+				C331C18A198A7DAC00B61D36 /* KillBug-9.mp3 */,
+				C331C18B198A7DAC00B61D36 /* Lose.mp3 */,
+				C331C18C198A7DAC00B61D36 /* Music.mp3 */,
+				C331C18D198A7DAC00B61D36 /* PlayerMove.mp3 */,
+				C331C18E198A7DAC00B61D36 /* TickTock.mp3 */,
+				C331C18F198A7DAC00B61D36 /* Win.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C331C190198A7DAC00B61D36 /* Extra Source Code */ = {
+			isa = PBXGroup;
+			children = (
+				C331C191198A7DAC00B61D36 /* SKTEffects.h */,
+				C331C192198A7DAC00B61D36 /* SKTEffects.m */,
+				C331C193198A7DAC00B61D36 /* SKTTimingFunctions.h */,
+				C331C194198A7DAC00B61D36 /* SKTTimingFunctions.m */,
+			);
+			path = "Extra Source Code";
+			sourceTree = "<group>";
+		};
+		C331C195198A7DAC00B61D36 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				C331C196198A7DAC00B61D36 /* juicy-level-bg.txt */,
+				C331C197198A7DAC00B61D36 /* juicy-level-breakables.txt */,
+				C331C198198A7DAC00B61D36 /* juicy-level-bugs.txt */,
+				C331C199198A7DAC00B61D36 /* JuicyLevels.plist */,
+				C331C19A198A7DAC00B61D36 /* level-1-bg.txt */,
+				C331C19B198A7DAC00B61D36 /* level-1-bugs.txt */,
+				C331C19C198A7DAC00B61D36 /* level-2-bg.txt */,
+				C331C19D198A7DAC00B61D36 /* level-2-breakables.txt */,
+				C331C19E198A7DAC00B61D36 /* level-2-bugs.txt */,
+				C331C19F198A7DAC00B61D36 /* level-3-sample.tmx */,
+				C331C1A0198A7DAC00B61D36 /* Levels.plist */,
+				C331C1A1198A7DAC00B61D36 /* TileMapLayerLoader.h */,
+				C331C1A2198A7DAC00B61D36 /* TileMapLayerLoader.m */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		C331C1DA198A7E9900B61D36 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C331C1DB198A7E9900B61D36 /* SKAction+SKTExtras.h */,
+				C331C1DC198A7E9900B61D36 /* SKAction+SKTExtras.m */,
+				C331C1DD198A7E9900B61D36 /* SKEmitterNode+SKTExtras.h */,
+				C331C1DE198A7E9900B61D36 /* SKEmitterNode+SKTExtras.m */,
+				C331C1DF198A7E9900B61D36 /* SKNode+SKTExtras.h */,
+				C331C1E0198A7E9900B61D36 /* SKNode+SKTExtras.m */,
+				C331C1E1198A7E9900B61D36 /* SKTAudio.h */,
+				C331C1E2198A7E9900B61D36 /* SKTAudio.m */,
+				C331C1E3198A7E9900B61D36 /* SKTUtils.h */,
+				C331C1E4198A7E9900B61D36 /* SKTUtils.mm */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		C331C1EB198A892000B61D36 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C331C1EC198A894000B61D36 /* Player.h */,
+				C331C1ED198A894000B61D36 /* Player.m */,
+				C331C1EE198A894000B61D36 /* Bug.h */,
+				C331C1EF198A894000B61D36 /* Bug.m */,
+				C331C1F0198A894000B61D36 /* FireBug.h */,
+				C331C1F1198A894000B61D36 /* FireBug.m */,
+				C331C1F2198A894000B61D36 /* Breakable.h */,
+				C331C1F3198A894000B61D36 /* Breakable.m */,
+				C331C1F4198A894000B61D36 /* AnimatingSprite.h */,
+				C331C1F5198A894000B61D36 /* AnimatingSprite.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		C331C1FE198A89D500B61D36 /* JSTileMap */ = {
+			isa = PBXGroup;
+			children = (
+				C331C1FF198A89E200B61D36 /* JSTileMap.h */,
+				C331C200198A89E200B61D36 /* JSTileMap.m */,
+				C331C201198A89E200B61D36 /* LFCGzipUtility.h */,
+				C331C202198A89E200B61D36 /* LFCGzipUtility.m */,
+				C331C203198A89E200B61D36 /* LICENSE.txt */,
+			);
+			name = JSTileMap;
+			sourceTree = "<group>";
+		};
+		C342BB7A198F8DAA000D6D9C /* myLevels */ = {
+			isa = PBXGroup;
+			children = (
+				C342BB81198F91DE000D6D9C /* myLevel-1-bg.txt */,
+				C342BB87198FA494000D6D9C /* myLevel-1-bugs.txt */,
+				C342BB8B198FA69D000D6D9C /* myLevel-2-bg.txt */,
+				C342BB8D198FA799000D6D9C /* myLevel-2-bugs.txt */,
+				C342BB8F198FA85F000D6D9C /* myLevel-2-breakables.txt */,
+				C342BB7B198F8DAA000D6D9C /* myLevel-3-bg.txt */,
+				C342BB7C198F8DAA000D6D9C /* myLevel-3-breakables.txt */,
+				C342BB7D198F8DAA000D6D9C /* myLevel-3-bugs.txt */,
+				C342BB83198F9DA0000D6D9C /* myLevels.plist */,
+			);
+			path = myLevels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C331C127198A7CD100B61D36 /* pestcontrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C331C161198A7CD100B61D36 /* Build configuration list for PBXNativeTarget "pestcontrol" */;
+			buildPhases = (
+				C331C124198A7CD100B61D36 /* Sources */,
+				C331C125198A7CD100B61D36 /* Frameworks */,
+				C331C126198A7CD100B61D36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pestcontrol;
+			productName = pestcontrol;
+			productReference = C331C128198A7CD100B61D36 /* pestcontrol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C331C14F198A7CD100B61D36 /* pestcontrolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C331C164198A7CD100B61D36 /* Build configuration list for PBXNativeTarget "pestcontrolTests" */;
+			buildPhases = (
+				C331C14C198A7CD100B61D36 /* Sources */,
+				C331C14D198A7CD100B61D36 /* Frameworks */,
+				C331C14E198A7CD100B61D36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C331C156198A7CD100B61D36 /* PBXTargetDependency */,
+			);
+			name = pestcontrolTests;
+			productName = pestcontrolTests;
+			productReference = C331C150198A7CD100B61D36 /* pestcontrolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C331C120198A7CD100B61D36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					C331C127198A7CD100B61D36 = {
+						DevelopmentTeam = 9E3N64F2YY;
+					};
+					C331C14F198A7CD100B61D36 = {
+						TestTargetID = C331C127198A7CD100B61D36;
+					};
+				};
+			};
+			buildConfigurationList = C331C123198A7CD100B61D36 /* Build configuration list for PBXProject "pestcontrol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C331C11F198A7CD100B61D36;
+			productRefGroup = C331C129198A7CD100B61D36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C331C127198A7CD100B61D36 /* pestcontrol */,
+				C331C14F198A7CD100B61D36 /* pestcontrolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C331C126198A7CD100B61D36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C342BB82198F91DE000D6D9C /* myLevel-1-bg.txt in Resources */,
+				C331C1BD198A7DAC00B61D36 /* KillBug-5.mp3 in Resources */,
+				C331C1A7198A7DAC00B61D36 /* FirebugSparks.sks in Resources */,
+				C331C1CC198A7DAC00B61D36 /* JuicyLevels.plist in Resources */,
+				C331C1D1198A7DAC00B61D36 /* level-2-bugs.txt in Resources */,
+				C331C1A9198A7DAC00B61D36 /* PlayerHitWall.sks in Resources */,
+				C331C1D0198A7DAC00B61D36 /* level-2-breakables.txt in Resources */,
+				C331C1CE198A7DAC00B61D36 /* level-1-bugs.txt in Resources */,
+				C331C1C6198A7DAC00B61D36 /* Win.mp3 in Resources */,
+				C342BB80198F8DAA000D6D9C /* myLevel-3-bugs.txt in Resources */,
+				C331C1BC198A7DAC00B61D36 /* KillBug-4.mp3 in Resources */,
+				C331C138198A7CD100B61D36 /* InfoPlist.strings in Resources */,
+				C331C1A4198A7DAC00B61D36 /* scenery.atlas in Resources */,
+				C342BB8E198FA799000D6D9C /* myLevel-2-bugs.txt in Resources */,
+				C331C1AB198A7DAC00B61D36 /* Rock.png in Resources */,
+				C331C1CA198A7DAC00B61D36 /* juicy-level-breakables.txt in Resources */,
+				C331C1B8198A7DAC00B61D36 /* KillBug-11.mp3 in Resources */,
+				C331C1AE198A7DAC00B61D36 /* Star.png in Resources */,
+				C331C1C2198A7DAC00B61D36 /* Lose.mp3 in Resources */,
+				C331C1CB198A7DAC00B61D36 /* juicy-level-bugs.txt in Resources */,
+				C331C1C4198A7DAC00B61D36 /* PlayerMove.mp3 in Resources */,
+				C331C1B7198A7DAC00B61D36 /* KillBug-10.mp3 in Resources */,
+				C331C1B0198A7DAC00B61D36 /* WaterDrop.png in Resources */,
+				C342BB7E198F8DAA000D6D9C /* myLevel-3-bg.txt in Resources */,
+				C331C1A6198A7DAC00B61D36 /* FirebugSmoke.sks in Resources */,
+				C342BB7F198F8DAA000D6D9C /* myLevel-3-breakables.txt in Resources */,
+				C331C14B198A7CD100B61D36 /* Images.xcassets in Resources */,
+				C331C1CD198A7DAC00B61D36 /* level-1-bg.txt in Resources */,
+				C331C1A5198A7DAC00B61D36 /* BugSplatter.sks in Resources */,
+				C331C1B9198A7DAC00B61D36 /* KillBug-12.mp3 in Resources */,
+				C331C1C3198A7DAC00B61D36 /* Music.mp3 in Resources */,
+				C331C1B6198A7DAC00B61D36 /* KillBug-1.mp3 in Resources */,
+				C331C1A8198A7DAC00B61D36 /* Leaf.png in Resources */,
+				C331C1A3198A7DAC00B61D36 /* characters.atlas in Resources */,
+				C331C1C9198A7DAC00B61D36 /* juicy-level-bg.txt in Resources */,
+				C331C141198A7CD100B61D36 /* Main.storyboard in Resources */,
+				C342BB90198FA85F000D6D9C /* myLevel-2-breakables.txt in Resources */,
+				C342BB8C198FA69D000D6D9C /* myLevel-2-bg.txt in Resources */,
+				C331C1AA198A7DAC00B61D36 /* PlayerTrail.sks in Resources */,
+				C331C1AC198A7DAC00B61D36 /* Spark.png in Resources */,
+				C331C1D2198A7DAC00B61D36 /* level-3-sample.tmx in Resources */,
+				C331C1BA198A7DAC00B61D36 /* KillBug-2.mp3 in Resources */,
+				C331C1AD198A7DAC00B61D36 /* Splat.png in Resources */,
+				C331C1BE198A7DAC00B61D36 /* KillBug-6.mp3 in Resources */,
+				C331C1B5198A7DAC00B61D36 /* HitWater.mp3 in Resources */,
+				C331C1B2198A7DAC00B61D36 /* HitFireBug.mp3 in Resources */,
+				C331C1C1198A7DAC00B61D36 /* KillBug-9.mp3 in Resources */,
+				C342BB88198FA494000D6D9C /* myLevel-1-bugs.txt in Resources */,
+				C331C1AF198A7DAC00B61D36 /* TreeSmash.sks in Resources */,
+				C331C1C0198A7DAC00B61D36 /* KillBug-8.mp3 in Resources */,
+				C331C1C5198A7DAC00B61D36 /* TickTock.mp3 in Resources */,
+				C331C206198A89E200B61D36 /* LICENSE.txt in Resources */,
+				C331C1BB198A7DAC00B61D36 /* KillBug-3.mp3 in Resources */,
+				C342BB84198F9DA0000D6D9C /* myLevels.plist in Resources */,
+				C331C1B3198A7DAC00B61D36 /* HitTree.mp3 in Resources */,
+				C331C1B4198A7DAC00B61D36 /* HitWall.mp3 in Resources */,
+				C331C1D3198A7DAC00B61D36 /* Levels.plist in Resources */,
+				C331C1CF198A7DAC00B61D36 /* level-2-bg.txt in Resources */,
+				C331C1B1198A7DAC00B61D36 /* DrownFireBug.mp3 in Resources */,
+				C331C1BF198A7DAC00B61D36 /* KillBug-7.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C331C14E198A7CD100B61D36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C331C15C198A7CD100B61D36 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C331C124198A7CD100B61D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C331C1F7198A894000B61D36 /* Bug.m in Sources */,
+				C331C1C8198A7DAC00B61D36 /* SKTTimingFunctions.m in Sources */,
+				C331C1E8198A7E9900B61D36 /* SKTAudio.m in Sources */,
+				C331C147198A7CD100B61D36 /* MyScene.m in Sources */,
+				C331C205198A89E200B61D36 /* LFCGzipUtility.m in Sources */,
+				C331C1D7198A7E1C00B61D36 /* TileMapLayer.m in Sources */,
+				C331C1E5198A7E9900B61D36 /* SKAction+SKTExtras.m in Sources */,
+				C331C1E9198A7E9900B61D36 /* SKTUtils.mm in Sources */,
+				C331C1D4198A7DAC00B61D36 /* TileMapLayerLoader.m in Sources */,
+				C331C1FD198A89A100B61D36 /* TmxTileMapLayer.m in Sources */,
+				C331C1F8198A894000B61D36 /* FireBug.m in Sources */,
+				C331C1C7198A7DAC00B61D36 /* SKTEffects.m in Sources */,
+				C331C204198A89E200B61D36 /* JSTileMap.m in Sources */,
+				C331C144198A7CD100B61D36 /* ViewController.m in Sources */,
+				C331C1E7198A7E9900B61D36 /* SKNode+SKTExtras.m in Sources */,
+				C331C13E198A7CD100B61D36 /* AppDelegate.m in Sources */,
+				C331C1E6198A7E9900B61D36 /* SKEmitterNode+SKTExtras.m in Sources */,
+				C331C1F6198A894000B61D36 /* Player.m in Sources */,
+				C331C1F9198A894000B61D36 /* Breakable.m in Sources */,
+				C331C13A198A7CD100B61D36 /* main.m in Sources */,
+				C331C1FA198A894000B61D36 /* AnimatingSprite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C331C14C198A7CD100B61D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C331C15E198A7CD100B61D36 /* pestcontrolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C331C156198A7CD100B61D36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C331C127198A7CD100B61D36 /* pestcontrol */;
+			targetProxy = C331C155198A7CD100B61D36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C331C136198A7CD100B61D36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C331C137198A7CD100B61D36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C331C13F198A7CD100B61D36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C331C140198A7CD100B61D36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C331C15A198A7CD100B61D36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C331C15B198A7CD100B61D36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C331C15F198A7CD100B61D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C331C160198A7CD100B61D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C331C162198A7CD100B61D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Oleksandr Isaiev (DY5W3KQG8M)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pestcontrol/pestcontrol-Prefix.pch";
+				INFOPLIST_FILE = "pestcontrol/pestcontrol-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0AB8C646-9862-4EA6-AAE9-F6A36DBCD753";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C331C163198A7CD100B61D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Oleksandr Isaiev (DY5W3KQG8M)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pestcontrol/pestcontrol-Prefix.pch";
+				INFOPLIST_FILE = "pestcontrol/pestcontrol-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0AB8C646-9862-4EA6-AAE9-F6A36DBCD753";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C331C165198A7CD100B61D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pestcontrol.app/pestcontrol";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pestcontrol/pestcontrol-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "pestcontrolTests/pestcontrolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C331C166198A7CD100B61D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pestcontrol.app/pestcontrol";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pestcontrol/pestcontrol-Prefix.pch";
+				INFOPLIST_FILE = "pestcontrolTests/pestcontrolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C331C123198A7CD100B61D36 /* Build configuration list for PBXProject "pestcontrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C331C15F198A7CD100B61D36 /* Debug */,
+				C331C160198A7CD100B61D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C331C161198A7CD100B61D36 /* Build configuration list for PBXNativeTarget "pestcontrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C331C162198A7CD100B61D36 /* Debug */,
+				C331C163198A7CD100B61D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C331C164198A7CD100B61D36 /* Build configuration list for PBXNativeTarget "pestcontrolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C331C165198A7CD100B61D36 /* Debug */,
+				C331C166198A7CD100B61D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C331C120198A7CD100B61D36 /* Project object */;
+}
